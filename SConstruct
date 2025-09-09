@@ -2,6 +2,7 @@
 import os
 import sys
 
+from SCons.Script import Environment, Variables, SConscript, ARGUMENTS, Help, Glob, Default
 from methods import print_error
 
 
