@@ -6,7 +6,7 @@ from SCons.Script import Environment, Variables, SConscript, ARGUMENTS, Help, Gl
 from methods import print_error
 
 
-libname = "EXTENSION-NAME"
+libname = "godotcon2024"
 projectdir = "demo"
 
 localEnv = Environment(tools=["default"], PLATFORM="")
