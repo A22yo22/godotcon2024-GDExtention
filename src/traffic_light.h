@@ -22,8 +22,12 @@ class TrafficLight : public Control {
     Ref<Texture2D> stop_texture;
     Ref<Texture2D> caution_texture;
 
+    TrafficLightType light_type;
+
 protected:
     static void _bind_methods();
+
+    void _notification(int p_what);
 
 public:
     void set_go_texture(const Ref<Texture2D> &p_texture);
@@ -35,7 +39,10 @@ public:
     void set_caution_texture(const Ref<Texture2D> &p_texture);
     Ref<Texture2D> get_caution_texture() const;
 
+    void set_light_type(TrafficLightType p_type);
+    TrafficLightType get_light_type() const;
+
     TrafficLight();
 };
 
-VARIANT_ENUM_CAST(TrafficLightType)
+VARIANT_ENUM_CAST(TrafficLightType);
