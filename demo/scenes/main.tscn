@@ -1,10 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://bsfo8ha5efgkl"]
+[gd_scene load_steps=5 format=3 uid="uid://bsfo8ha5efgkl"]
 
 [ext_resource type="Script" uid="uid://dbw1gcrxktc82" path="res://scripts/main.gd" id="1_o5qli"]
+[ext_resource type="Texture2D" uid="uid://barrtm4jludf0" path="res://assets/go.png" id="2_jyhfs"]
+[ext_resource type="Texture2D" uid="uid://cudrtrw856ram" path="res://assets/wait.png" id="3_tbgi4"]
+[ext_resource type="Texture2D" uid="uid://vc5sx0fpvtnw" path="res://assets/caution.png" id="4_tefeu"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_o5qli")
 
 [node name="TrafficLight" type="TrafficLight" parent="."]
-offset_right = 40.0
-offset_bottom = 40.0
+go_texture = ExtResource("2_jyhfs")
+stop_texture = ExtResource("3_tbgi4")
+caution_texture = ExtResource("4_tefeu")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2

@@ -7,6 +7,12 @@
 
 using namespace godot;
 
+enum TrafficLightType {
+    TRAFFIC_LIGHT_GO,
+    TRAFFIC_LIGHT_STOP,
+    TRAFFIC_LIGHT_CAUTION
+};
+
 class TrafficLight : public Control {
     GDCLASS(TrafficLight, Control);
 
@@ -31,3 +37,5 @@ public:
 
     TrafficLight();
 };
+
+VARIANT_ENUM_CAST(TrafficLightType)
